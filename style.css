@@ -1,0 +1,74 @@
+/* referenced coding train CSS tutorial (https://www.youtube.com/watch?v=zGL8q8iQSQw&ab_channel=TheCodingTrain) */
+/* referenced (https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) */
+
+html, body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* position p5.js canvas */
+#canvasContainer {
+  position: absolute;
+  top: calc(50% - 250px - 100px); 
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* position input box */
+#inputContainer {
+  position: absolute;
+  top: calc(50% + 180px); 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 1; 
+}
+
+/* positions search button */
+#songInput, button {
+  margin: 5px;
+}
+
+/* parameters for search suggestions box */
+#suggestionBox {
+  width: 500px;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+/* parameters for individual search suggestions inside the box */
+#suggestionBox div {
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+/* sets up hover color */
+#suggestionBox div:hover {
+  background-color: #f0f0f0;
+}
+
+/* parameters for track suggestions to be displayed */
+.track-suggestion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* parameters for album art to be displayed */
+.album-art {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
