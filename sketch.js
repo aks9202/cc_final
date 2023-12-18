@@ -33,7 +33,7 @@ const authOptions = {
 
 function setup() {
 
-    //connects to css parameters
+    //connects to CSS parameters
     let cnv = createCanvas(1000, 500);
     cnv.parent('canvasContainer');
 
@@ -126,7 +126,7 @@ function draw() {
 }
 
 // Particle class referenced from (https://openprocessing.org/sketch/1990191)
-// Moves, chekces edges, and updates position
+// Moves, checks edges, and updates position
 class Particle {
     constructor(loc_x, loc_y, speed_) {
         this.loc = createVector(loc_x, loc_y);
