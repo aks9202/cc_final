@@ -92,7 +92,7 @@ function draw() {
     fill(0, 5);
     rect(0, 0, width, height);
 
-    // Use HSB color mode for vibrant colors
+    // Uses HSB color mode for more vibrant colors
     colorMode(HSB);
 
     // Maps different audio features to color components
